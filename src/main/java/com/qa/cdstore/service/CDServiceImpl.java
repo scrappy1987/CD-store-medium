@@ -1,3 +1,4 @@
+package com.qa.cdstore.service;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,24 +10,60 @@ import org.apache.log4j.Logger;
 
 import com.qa.cdstore.model.CD;
 import com.qa.cdstore.util.JSONUtil;
-
-@ApplicationScoped
-@Alternative
-public class CDServiceImpl implements CDService {
-	private static final Logger LOGGER = Logger.getLogger(CDServiceImpl.class);
-	private final int INITIAL_COUNT = 1;
-	private Map<Integer, CD> cdMap;
-	private int ID;
-
-	
-	
-	@Inject
-	private JSONUtil util;
-	
-	public CDServiceImpl(){
-		this.cdMap = new HashMap<Integer, CD>();
-		ID= INITIAL_COUNT;
-		initCDStore;
-	}
+//
+//@ApplicationScoped
+//@Alternative
+//public class CDServiceImpl implements CDService {
+public class CDServiceImpl {
+//	private static final Logger LOGGER = Logger.getLogger(CDServiceImpl.class);
+//	private final int INITIAL_COUNT = 1;
+//	private Map<Integer, CD> cdMap;
+//	private int ID;
+//
+//	
+//	
+//	@Inject
+//	private JSONUtil util;
+//	
+//	public CDServiceImpl(){
+//		this.cdMap = new HashMap<Integer, CD>();
+//		ID= INITIAL_COUNT;
+//		//initCDStore;
+//	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
