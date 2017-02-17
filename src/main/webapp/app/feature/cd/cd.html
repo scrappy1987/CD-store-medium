@@ -1,0 +1,26 @@
+<div ng-controller="CDController as ctrl">
+    <h2>Search Cd's</h2>
+
+    CD's <input type="text" ng-model="cdSearch">
+
+    <br>
+    <h2> Order CDs by: </h2>
+    <table class="table table-ordered">
+        <tr>
+
+            <th ng-click="sortNow('Artist')">Artist</th>
+            <th ng-click="sortNow('Song')">Song</th>
+            <th ng-click="sortNow('Genre')">Genre</th>
+
+        </tr>
+        <tr ng-repeat="currentCd in ctrl.cd | filter:cdSearch | orderBy: sortBy:reverse ">
+            <td><a ui-sref="{{currentCd.artist}}">{{currentCd.artist}}</a></td>
+            <td>{{currentCd.song}}</td>
+            <td>{{currentCd.genre}}</td>
+        </tr>
+
+
+    </table>
+
+    <a ui-sref="aboutUs">About Us</a>
+</div>
