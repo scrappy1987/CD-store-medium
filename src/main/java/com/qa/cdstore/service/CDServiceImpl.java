@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Map;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -21,5 +22,11 @@ public class CDServiceImpl implements CDService {
 	
 	@Inject
 	private JSONUtil util;
+	
+	public CDServiceImpl(){
+		this.cdMap = new HashMap<Integer, CD>();
+		ID= INITIAL_COUNT;
+		initCDStore;
+	}
 	
 }
