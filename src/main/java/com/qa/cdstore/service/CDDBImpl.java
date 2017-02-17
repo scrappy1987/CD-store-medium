@@ -24,7 +24,7 @@ public class CDDBImpl implements CDService {
 	
 	@Override
 	public String getAllCDs() {
-		Query query = em.createQuery("SELECT * FROM CD");
+		Query query = em.createQuery("SELECT e FROM CD e");
 		Collection<CD> CDs = (Collection<CD>) query.getResultList();
 		return util.getJSONForObject(CDs);
 	}

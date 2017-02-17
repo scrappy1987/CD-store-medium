@@ -1,6 +1,7 @@
 package com.qa.cdstore.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 
@@ -9,6 +10,7 @@ import javax.persistence.Id;
 public class CD {
 	
 	@Id
+	@GeneratedValue
 	private Long id;
 	private String artist;
 	private String song;
