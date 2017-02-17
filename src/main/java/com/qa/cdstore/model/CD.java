@@ -11,7 +11,7 @@ public class CD {
 	
 	@Id
 	@GeneratedValue
-	private Long id;
+	private long id;
 	private String artist;
 	private String song;
 	private String genre;
